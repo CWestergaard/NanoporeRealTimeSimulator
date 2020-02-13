@@ -24,7 +24,7 @@ Required arguments
 ```
 Optional arguments (Either -cl or -tl must be included).
 ```
--cl <Coverage list. Used to decide the size of the smaller Nanopore fastq files, based on the required amount of reads to reach an average genome coverage with a given genome size. Values should be integers ordered from lowest to highest and comma-delimetered, eg. 1,2,3,4,5>
+-cl <Coverage list. Used to decide which reads to include in the smaller Nanopore fastq files, based on the data amount. Data amount is given as the average genome coverage, so a coverage of one corresponds to the amount of basepairs equal to the genome size given. Values should be integers ordered from lowest to highest and comma-delimetered, eg. 1,2,3,4,5>
 -tl <Time list. Used to decide which reads to include in the smaller Nanopore fastq files, based on the sequencing time. Values should be integers ordered from lowest to highest and comma-delimetered, eg. 10,20,30,40,50,60. These values correspond to the amount of Minutes since the first read is sequenced.>
 -alb <Script is written with Guppy basecalling in mind. If the input reads are basecalled using Albacore, use '-alb yes'.>
 ```
