@@ -7,8 +7,8 @@ Version: 1.0
 Author: Casper Westergaard
 
 Example string:
-python3 CoverageTimesort.py -i /srv/data/AS/CASW/data/q8/CPO20160077/CPO20160077.chop.q8.fastq.gz
- -o /srv/data/AS/CASW/data/q8/CPO20160077/realtime/ -gs 5m -cl 1,2,3,4,5,6,7,8,9,10,15,20,30,40,50,60
+python3 NanoporeRealTimeSimulator.py -i CPO20160077.chop.q8.fastq.gz
+ -o CPO20160077/realtime/ -gs 5m -cl 1,2,3,4,5,6,7,8,9,10,15,20,30,40,50,60
 """
 
 #Import libraries
@@ -44,8 +44,7 @@ parser.add_argument('-tl', type=str, dest='time_list',
                     ' times should be comma-delimitered and ordered from lowest to highest', required=False)
 args = parser.parse_args()
 
-
-# Check that input arguments are valid
+# Initialize variables and check that input arguments are valid
 coverage_flag = 0
 time_flag = 0
 
