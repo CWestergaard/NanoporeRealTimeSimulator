@@ -22,8 +22,7 @@ Required arguments
 -o <Path to output folder>
 -gs <Genome size. As an example, an approximate Genome size for Gram-negative bacteria is 5.000.000 bp. Genome size can be given as the full number (5000000), or as Giga- (0.005G), Mega- (5M) or Kilobases (5000K).>
 ```
-Optional arguments
-Either -cl or -tl must be included.
+Optional arguments (Either -cl or -tl must be included).
 ```
 -cl <Coverage list. Used to decide the size of the smaller Nanopore fastq files, based on the required amount of reads to reach an average genome coverage with a given genome size. Values should be integers ordered from lowest to highest and comma-delimetered, eg. 1,2,3,4,5>
 -tl <Time list. Used to decide which reads to include in the smaller Nanopore fastq files, based on the sequencing time. Values should be integers ordered from lowest to highest and comma-delimetered, eg. 10,20,30,40,50,60. These values correspond to the amount of Minutes since the first read is sequenced.>
