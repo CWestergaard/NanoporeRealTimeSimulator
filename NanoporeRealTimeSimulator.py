@@ -1,5 +1,5 @@
 """
-Program: CoverageTimesort
+Program: NanoporeRealTimeSimulator
 Description: Simulate real-time data generation by sorting input fastq.gz file 
              into smaller files. Files can be sorted based on average genome coverage or sequencing time.
              Reads are sorted based on their timestamp (Nanopore).
