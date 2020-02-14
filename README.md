@@ -32,7 +32,7 @@ Optional arguments (Either -cl or -tl must be included).
 
 ## Output
 
-Data amount (Average genome coverage)
+Data amount (Average genome coverage)\n
 Example: -gs 5M -cl 1,2,3,4,5
 - Coverage1.fastq.gz file containing the first 5 Mbp of sequencing reads.
 - Coverage2.fastq.gz file containing the first 10 Mbp of sequencing reads.
@@ -41,7 +41,7 @@ Example: -gs 5M -cl 1,2,3,4,5
 - Coverage5.fastq.gz file containing the first 25 Mbp of sequencing reads.
 - Cov_stats.txt file containing general information as well as the time required to reach the given average genome coverages.
 
-Sequencing time (Minutes)
+Sequencing time (Minutes)\n
 Example: -gs 5M -tl 10,20,30,40,50
 - Time10.fastq.gz file containing the reads sequenced in the first 10 minutes after the first read is sequenced.
 - Time20.fastq.gz file containing the reads sequenced in the first 20 minutes after the first read is sequenced.
