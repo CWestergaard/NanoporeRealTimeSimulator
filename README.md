@@ -10,7 +10,7 @@ Data amount (Average genome coverage, based on genome size)
 ```
 python3 NanoporeRealTimeSimulator.py [-i <Input file>] [-o <Output folder>] [-gs <Genome size>] [-cl <Coverage list>]
 ```
-Sequencing time
+Sequencing time (Minutes)
 ```
 python3 NanoporeRealTimeSimulator.py [-i <Input file>] [-o <Output folder>] [-gs <Genome size>] [-tl <Time list>]
 ```
