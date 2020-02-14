@@ -304,6 +304,6 @@ if time_flag == 1:
             time_last_read_index = time_reads[i][1]
             bases = sum([reads[x][1] for x in range(time_first_read_index,time_last_read_index)])   # Bases in reads added between previous time and now
             time_basecount += bases
-            time_coverage = time_basecount/genome_size
+            time_coverage = round((time_basecount/genome_size),2)
             outfile.write('{}: {} \n'.format(args.time_list[i],time_coverage))
             
