@@ -50,11 +50,11 @@ time_flag = 0
 
 # Convert input genome size to int
 if args.genome_size_string[-1].upper() == 'K':
-    genome_size = int(float(args.genome_size_string[0:-1])) * 1000
+    genome_size = int(float(args.genome_size_string[0:-1]) * 1000)
 elif args.genome_size_string[-1].upper() == 'M':
-    genome_size = int(float(args.genome_size_string[0:-1])) * 1000000
+    genome_size = int(float(args.genome_size_string[0:-1]) * 1000000)
 elif args.genome_size_string[-1].upper() == 'G':
-    genome_size = int(float(args.genome_size_string[0:-1])) * 1000000000
+    genome_size = int(float(args.genome_size_string[0:-1]) * 1000000000)
 else:
     genome_size = int(args.genome_size_string)
     
