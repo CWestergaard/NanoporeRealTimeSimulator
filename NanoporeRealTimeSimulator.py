@@ -34,8 +34,8 @@ parser.add_argument('-o', type=str, dest='output_folder',
                     help='Path to output folder', required=True)
 parser.add_argument('-gs', type=str, dest='genome_size_string', 
                     help='Size of genome', required=True)
-parser.add_argument('-alb', type=str, dest='albacore', 
-                    help='If albacore is used for basecalling, use -alb yes', required=False)
+#parser.add_argument('-alb', type=str, dest='albacore', 
+#                    help='If albacore is used for basecalling, use -alb yes', required=False)
 parser.add_argument('-cl', type=str, dest='coverage_list', 
                     help='List of coverages, a new file will be created for each element,'
                     ' coverages should be comma-delimitered and ordered from lowest to highest', required=False)
@@ -107,12 +107,18 @@ reads = list()
 sequence_flag = 0
 total_bases = 0
 
+"""
 # Difference in header between Albacore and Guppy reads. Guppy assumed as default.
+# No longer needed, as Guppy header has been changed since the initial script
 if args.albacore:
     if args.albacore.lower() == 'yes':
         time_index = 4
 else:
     time_index = 5
+"""
+# Time_index set to 4 as default, consistent with both Albacore and new Guppy headers
+# Change this value to 5 if you are using older Guppy reads and you are getting a datetime error
+time_index = 4
     
 # Go through each read, save the timestamp, number of bases and the total read
 with gzip.open(args.input_filename, 'r') as infile:           
