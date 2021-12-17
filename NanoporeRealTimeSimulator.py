@@ -114,8 +114,8 @@ total_bases = 0
 if args.oldGuppy:
     if args.oldGuppy.lower() == 'yes':
         time_index = 5
-     else:
-        sys.exit('Argument for oldGuppy differs from the expected. Remove the argument or use -oldGuppy yes")
+    else:
+        sys.exit('Argument for oldGuppy differs from the expected. Remove the argument or use -oldGuppy yes')
 else:
     time_index = 4
     
