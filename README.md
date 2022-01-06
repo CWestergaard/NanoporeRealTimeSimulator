@@ -44,7 +44,7 @@ Data amount (Number of bases) - Example: -sl 1M,2M,3M,4M,5M
 - size_4M.fastq.gz file containing the first 4 Mbp of sequencing reads.
 - size_5M.fastq.gz file containing the first 5 Mbp of sequencing reads.
 - size_stats.txt file containing general information as well as the time required to reach the given number of bases.
-- 
+
 Data amount (Average genome coverage) - Example: -gs 5M -cl 1,2,3,4,5
 - coverage1.fastq.gz file containing the first 5 Mbp of sequencing reads.
 - coverage2.fastq.gz file containing the first 10 Mbp of sequencing reads.
